@@ -14,7 +14,7 @@ let b:did_indent = 1
 " smartindent is good enough for powershell
 setlocal smartindent
 " disable the indent removal for # marks
-inoremap # <Space>^H#
+inoremap # <Space><BS>#
 
 let b:undo_indent = "setl si<"
 
