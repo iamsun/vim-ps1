@@ -12,9 +12,13 @@ endif
 let b:did_indent = 1
 
 " smartindent is good enough for powershell
-setlocal smartindent
+" setlocal smartindent
 " disable the indent removal for # marks
-inoremap # <Space><BS>#
+" inoremap # <Space><BS>#
+
+setlocal cindent
+setlocal cinkeys-=0#
+setlocal indentkeys-=0#
 
 let b:undo_indent = "setl si<"
 
